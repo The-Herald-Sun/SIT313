@@ -1,0 +1,142 @@
+.App {
+  text-align: center;
+  background-color: #EEEEEE;
+  padding: 0;
+  margin: 0;
+}
+
+.dev-deakin-logo {
+    padding-left: 0.5em;
+}
+
+.navbar {
+    background-color: #EEEEEE;
+    position: sticky;
+    top: 0;
+    padding: 0;
+    display: flex;
+    height: 2.4em;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.navbar h2 {
+    padding-right: 0.5em;
+}
+
+.search-bar {
+    margin-left: 0.5em;
+    margin-right: 1em;
+    flex-grow: 1;
+}
+
+.search-bar input {
+    width: 100%;
+}
+
+.banner {
+    background-color: black;
+    position: relative;
+    width: 100%;
+    height: 20em;
+}
+
+.banner img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.shelf {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3em;
+    width: 80%;    
+}
+
+.card {
+    width: 100%;
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    display: block;
+}
+
+.card h3  {
+    margin-top: 0.1em;
+    margin-left: 0.2em;
+    margin-bottom: 0;
+}
+
+.card hr {
+}
+
+.card p {
+    margin-top: 0;
+}
+
+.card .description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: elilipsis;
+}
+
+.left-right {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.Footer {
+    background-color: teal;
+}
+
+.Footer h1 {
+    margin: 0;
+}
+
+.Footer ul {
+    text-align: left;
+}
+
+.socials {
+
+}
+
+.socials img{
+    margin: 0.5em;
+    height: 3em;
+    border-radius: 5px;
+}
+
+.Footer .legal {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.button {
+    margin: 1em;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0.4em;
+    background-color: teal;
+    border-radius: 100px;
+
+}
