@@ -14,8 +14,8 @@ function App() {
                 <label for="post-type">Select Post Type: </label>
                 <input name="post-type" type="radio" value="question" id="question"  onClick={() => setFormType(QuestionForm)}/>
                 <label for="question">Question</label>
-                <input name="post-type" type="radio" value="article" id="article" onClick={() => setFormType(ArticleForm)}/>
-                <label for="article">Article</label>
+                <input name="post-type" type="radio" value="article" id="Article" onClick={() => setFormType(ArticleForm)}/>
+                <label for="Article">Article</label>
             </form>
             <GreyBreak><h1>What do you want to ask or share</h1></GreyBreak>
             {formType}

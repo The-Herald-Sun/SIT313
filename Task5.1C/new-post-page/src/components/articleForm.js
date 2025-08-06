@@ -14,6 +14,7 @@ export default function PostForm () {
             <br />
             <label for="tags">Tags</label>
             <input id="tags" name="tags" type="text" />
+            <input type="submit" />
         </form>
     )
 }

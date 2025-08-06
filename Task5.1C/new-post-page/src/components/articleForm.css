@@ -1,5 +1,9 @@
-#problem {
+#article {
     margin-left: 1em;
     width: 90%;
     height: 10em;
+}
+
+#abstract {
+    margin-left: 1em;
 }
