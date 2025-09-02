@@ -12,7 +12,7 @@ async function signUp(formData) {
   const fname = formData.get("name")
   const lname = formData.get("surname")
 
-  if (password != confPassword) {
+  if (password !== confPassword) {
     alert("Passwords Must Match")
     return
   }

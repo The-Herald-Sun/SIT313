@@ -1,10 +1,12 @@
 import { auth } from '../firebase-config.js'
 import { signInWithEmailAndPassword } from 'firebase/auth'
-import './Login.css'
 import { Link, useNavigate } from 'react-router-dom'
+import { useState } from 'react'
 
+import './Login.css'
 
 export default function Login() {
+  const [error, setError] = useState("");
   const navigate = useNavigate()
 
   async function login(formData) {
@@ -17,16 +19,15 @@ export default function Login() {
     catch (error) {
       switch (error.code) {
         case 'auth/wrong-password':
-          alert("Incorrect password. Please try again.");
+          setError("Incorrect password. Please try again.")
           return;
         case 'auth/user-not-found':
-          alert("No account found with that email address.");
+          setError("No account found with that email address.");
           return;
         case 'auth/invalid-email':
-          alert("The email address is not valid.");
+          setError("The email address was not valid.");
           return;
         default:
-          alert(error.message);
           return;
       }
     }
@@ -46,6 +47,8 @@ export default function Login() {
         <input type="password" id="password" name="password" required />
         <br />
         <button type="submit">Log In</button>
+        <br />
+        {error}
       </form>
     </div>
   )
