@@ -1,0 +1,19 @@
+
+.nav {
+    text-align: center;
+    background-color: #EEEEEE;
+    position: sticky;
+    top: 0;
+    padding: 0;
+    display: flex;
+    height: 2.4em;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.nav h2 {
+    padding-right: 0.5em;
+}
+
+
