@@ -18,16 +18,14 @@ export default function Login() {
     }
     catch (error) {
       switch (error.code) {
-        case 'auth/wrong-password':
-          setError("Incorrect password. Please try again.")
-          return;
-        case 'auth/user-not-found':
-          setError("No account found with that email address.");
+        case 'auth/invalid-credential':
+          setError("Incorrect email or password. Please try again.")
           return;
         case 'auth/invalid-email':
           setError("The email address was not valid.");
           return;
         default:
+          console.log(error)
           return;
       }
     }
