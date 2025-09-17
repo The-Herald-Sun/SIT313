@@ -1,0 +1,21 @@
+.mailing-list-sign-up {
+  text-align: center;
+  background-color: lightgrey;
+  position: sticky;
+  padding: 0.1em 0.2em;
+  display: flex;
+  height: 2.4em;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.email {
+    margin-left: 0.5em;
+    margin-right: 1em;
+    flex-grow: 1;
+}
+
+.email input {
+    width: 100%;
+}
