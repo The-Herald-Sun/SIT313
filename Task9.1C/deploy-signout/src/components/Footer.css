@@ -1,0 +1,38 @@
+.left-right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer {
+  padding: 0 1em;
+  background-color: teal;
+}
+
+.Footer h1 {
+    margin: 0;
+}
+
+.Footer ul {
+    padding: 0;
+    text-align: left;
+}
+
+.socials {
+
+}
+
+.socials img{
+    margin: 0.5em;
+    height: 3em;
+    border-radius: 5px;
+}
+
+.Footer .legal {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+

@@ -1,0 +1,14 @@
+.login {
+  margin: auto;
+  width: 20em;
+  margin-bottom: 2em;
+}
+
+.login input {
+  width: 100%;
+  border-radius: 100px;
+  padding: 0.2em 0.4em ;
+  margin: 0.5em 0;
+}
+
+
